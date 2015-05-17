@@ -19,7 +19,7 @@ optional arguments:
   
   &nbsp;&nbsp;&nbsp;&nbsp;**-t minutes**  Indicates how many minutes back to look at kill logs
   
-  &nbsp;&nbsp;&nbsp;&nbsp;**-n count**    Returns the first n results from the kill log
+  &nbsp;&nbsp;&nbsp;&nbsp;**-n count**    Returns the first *count* results from the kill log
   
   &nbsp;&nbsp;&nbsp;&nbsp;**-k**          Queries kill log
   
