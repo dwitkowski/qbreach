@@ -8,9 +8,10 @@ Script to query the kill log and player list provided at http://thebreach.ca
 &nbsp;&nbsp;&nbsp;&nbsp;Queries the kill log and user list for thebreach.ca Rust server
 
 positional arguments:
+  
   &nbsp;&nbsp;&nbsp;&nbsp;name
   
-  optional arguments:
+optional arguments:
   
   &nbsp;&nbsp;&nbsp;&nbsp;**-h, --help**  show this help message and exit
   
