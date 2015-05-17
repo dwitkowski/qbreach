@@ -57,8 +57,8 @@ def query_player_list():
             # There should be 4 children but for some reason sometimes one of the entries is blank
             if len(children) == 4:
                     
-                    # Encode with as ascii and ignore retarded unicode characters	
-                    name = children[1].text_content().encode('ascii', 'ignore')
+                    # Encode as utf-8 since people like to use retarded unicode characters in their name	
+                    name = children[1].text_content().encode('utf_8', 'ignore')
                     online = children[3].text_content()
                     
                     # Skip over the row if the name is 'Player' since this means we are in the header
@@ -123,9 +123,9 @@ def query_kill_logs():
             # There should be 3 children but for some reason sometimes one of the entries is blank
             if len(children) == 3:
                     
-                    # Encode with as ascii and ignore retarded unicode characters
-                    killed = children[0].text_content().encode('ascii', 'ignore')
-                    killer = children[1].text_content().encode('ascii', 'ignore')
+                    # Encode as utf-8 since people like to use retarded unicode characters in their name
+                    killed = children[0].text_content().encode('utf_8', 'ignore')
+                    killer = children[1].text_content().encode('utf_8', 'ignore')
                     time = children[2].text_content()
     
                     # The string literal value 'Time' indicates we are in the header which should be skipped
